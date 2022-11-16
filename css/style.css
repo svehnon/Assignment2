@@ -1,0 +1,808 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    width: auto;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+.wrapper {
+    padding: 5px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+header {
+    font-size: 40px;
+    color: white;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+    font-style: italic;
+    color: dimgrey;
+    padding: 10px 20px;
+}
+
+.container {
+    width: auto;
+    padding: 0px;
+    margin: 0px;
+    background-color: darkslateblue;
+    height: auto;
+}
+
+
+/* --TOP PAGE SECTION WITH LOGO--------------------------------------------------------------------- */
+h1 {
+    font-size: 20px;
+    color: rgb(211, 233, 156);
+    font-style: italic;
+    font-weight: lighter;
+    padding: 10px 20px;
+}
+
+.logoimage {
+    width: 120px;
+    align-items: left;
+    float: left;
+    padding: 5px;
+
+}
+
+.button {
+    padding: 15px 30px;
+    display: flex;
+    justify-content: right;
+    /* border-radius: 20px; */
+    color: white;
+    /* font-weight: bold; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+    transition: .5s;
+    margin-top: 0px;
+    padding: 15px 15px;
+}
+
+.button-blue {
+    background-color: rgb(6, 49, 85);
+}
+
+.button-blue:hover {
+    background-color: #ebf676;
+    color: darkcyan;
+}
+
+
+/* --------------------------------------------------------------- */
+/* NAVIGATION BAR SETTINGS AND STYLES */
+.topnav ul {
+    list-style-type: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* margin:0; */
+    display: flex;
+    justify-content: space-between;
+    background-color: darkcyan;
+    padding: 14px;
+}
+
+.topnav a {
+    /* float:left; */
+    display: contents;
+    color: aliceblue;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* change color on hover */
+.topnav a:hover {
+    color: black;
+}
+
+/* color to active/current link */
+.topnav a.active {
+    background-color: aliceblue;
+    color: darkslateblue;
+}
+
+/* ---HOME PAGE---------------------------------------------------------------- */
+/* TOP SECTION:SUMMARY AND DEFINITION */
+.container1 {
+    /* width: inline-block; */
+    display: inline-block;
+    height: 400px;
+    /* background-color: rgb(24, 112, 122); */
+    padding: 0px 00px;
+    margin: 0px;
+
+}
+
+/* .lightbulb {
+    align-items: left;
+    float: left;
+    padding: 5px;
+    width: 200px;
+} */
+
+p {
+    font-family: cursive;
+    font-size: 20px;
+    color: aliceblue;
+    padding: 10px 20px;
+}
+
+ul {
+    font-family:cursive;
+    /* HOW TO CHANGE FONT SIZE? */
+}
+
+#list {
+    text-align: left;
+    list-style-position: inside;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: aliceblue;
+    font-size: 18px;
+    font-style: normal;
+}
+
+
+
+/* ------------------------------------------------------------ */
+/* INTRODUCTION SECTION */
+.container2 {
+    display: inline-block;
+    width: 100%;
+    /* height: auto; */
+    background-color: rgb(24, 112, 122);
+    padding: 0px 0px;
+    margin: 0px;
+}
+
+/* .lightbulb2 {
+    display: grid;
+    grid-column: 3;
+    grid-gap: 5%;
+    align-items: center;
+    /* trying to make second bulb on right side, with text on left */
+/* } */
+
+#list2 {
+    display: grid;
+    grid-column: 2;
+    text-align: left;
+    list-style-position: inside;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* ---------------------------------------------------------- */
+/* FLEXIBLE GRID */
+main {
+    display: grid;
+    grid-template-columns: 1 fr 3 fr;
+    grid-gap: 20px;
+    flex-grow: 1;
+}
+
+footer {
+    width: auto;
+    height: 50px;
+    background-color: darkslateblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.container3{
+    position:relative;
+    width:50%;
+    display:flex;
+    max-width: 100%;
+    grid-template-columns: 4;
+    grid-column: 1;
+
+}
+.lightbulb5 {
+   opacity:1;
+    display:flex;
+    width:200px;
+    height:auto;
+    /* grid-column: 1;
+    grid-row:2; */
+    transition: .5s ease;
+    backface-visibility: hidden;
+    /* align-items: center; */
+    padding: 5px;
+   
+}
+.middle{
+transition: .5s;
+opacity:0;
+position: relative;
+top:50%;
+left:50%;
+translate:(-50%, -50%);
+  /* -ms-transform: translate(-50%, -50%); */
+  text-align: center;
+}
+
+.container3:hover .lightbulb{
+    opacity:0.3;
+}
+.container3:hover .middle{
+    opacity: 1;
+    
+}
+
+.container3:hover.text{
+    background-color:black;
+    display:flex;
+    grid-column: 1;
+    color:darkgreen;
+    font-size:30px;
+    padding: 5px 5px;
+}
+
+
+/* --------------------5 AREAS WEBPAGE ---------------------------------*/
+
+h3 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-style: light;
+    color: black;
+}
+
+h4 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-style: light;
+    color: black;
+}
+
+h5 {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-style: light;
+    color: darkslategrey;
+
+}
+
+
+.fiveareascontainer {
+    /* max-width: 100%; */
+    display: grid;
+    grid-template-rows: 5;
+    grid-template-columns: 3;
+    align-items: center;
+    /* display: inline-block;
+    width: 100%; */
+    /* height: auto; */
+    padding: 0px 0px;
+    margin: 0px;
+}
+
+/* .fiveareas-wrapper {
+    float: auto;
+    width: auto;
+    height: 200px;
+} */
+
+
+.SAabstractblue {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    /* align-items: left;
+    float: left;
+    padding: 5px;
+    width: 300px; */
+}
+
+.SAabstractblue img {
+    display: grid;
+    /* float: left; */
+    grid-column: 1;
+    width: 250px;
+    height: auto;
+    padding: 5px;
+    /* grid-template-columns: 1 fr 3 fr; */
+    grid-gap: 5%;
+}
+
+
+.purple {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.purple img {
+    display: grid;
+    align-items: right;
+    float: left;
+    width: 250px;
+    height: auto;
+    padding: 5px 20px;
+    grid-template-columns: 1 fr 3 fr;
+    grid-gap: 5%;
+
+}
+
+
+
+.teal {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.teal img {
+    display: grid;
+    align-items: right;
+    float: left;
+    width: 250px;
+    height: auto;
+    padding: 5px 0px;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 5%;
+
+}
+
+.green {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.green img {
+    display: flex;
+    align-items: right;
+    float: left;
+    width: 250px;
+    height: auto;
+    padding: 5px 20px;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 5%;
+
+}
+
+.purple2 {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+}
+
+.purple2 img {
+    display: flex;
+    align-items: right;
+    float: left;
+    width: 250px;
+    height: auto;
+    padding: 5px 20px;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 5%;
+
+}
+
+.button2 {
+    display: flex;
+    justify-content: left;
+    color: darkslategray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    transition: .5s;
+}
+
+.button2 text {
+    color: darkslategray;
+}
+
+.button2:hover {
+    background-color: #ebf676;
+    color: darkcyan;
+}
+
+
+
+/* ----------BENEFITS PAGE------------------------------------------------------------ */
+
+.container4 {
+    background-color: rgb(72, 30, 87);
+    display: inline-block;
+    width: 100%;
+}
+.lightbulb3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: right;
+    float: left;
+    padding: 5px;
+    width: 200px;
+}
+
+
+/* -------PLANNING PAGE------------------------------------------------------------------ */
+.lightbulb3 {
+    align-items: left;
+    float: left;
+    padding: 5px;
+    width: 200px;
+}
+
+.container5 {
+    background-color: rgb(192, 131, 185);
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+/* ----EVALUATON PAGE-------------------------------------------------------------------------------------- */
+.lightbulb3 {
+    align-items: left;
+    float: left;
+    padding: 5px;
+    width: 200px;
+}
+
+.container6 {
+    background-color: rgb(24, 112, 142);
+    display: inline-block;
+    width: 100%;
+}
+
+
+/* -------------RESPONSSOVE DESIGNS----------------------------------------------------------------------- */
+
+
+/* ----------RESPONSIVE DESIGN at 900px---------------------------------------------------------------- */
+@media screen and (max-width: 900px) {
+    main {
+        display: grid;
+        grid-template-columns: 1 fr 1fr;
+        grid-gap: 20px;
+        flex-grow: 1;
+    }
+
+    .fiveareas {
+        max-width: 100%;
+        /* height: auto; */
+        /* background-color: white; */
+        /* padding: 10px 10px;
+        margin: 0px; */
+    }
+
+    .topnav ul {
+        list-style-type: none;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* margin:0; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: darkcyan;
+        padding: 14px;
+        /* overflow:hidden; */
+    }
+
+    .topnav a {
+        /* float:left; */
+        display: flex;
+        color: aliceblue;
+        text-align: center;
+        padding: 14px 0px;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    /* change color on hover */
+    .topnav a:hover {
+        color: black;
+    }
+
+    /* color to active/current link */
+    .topnav a.active {
+        color: darkslateblue;
+    }
+}
+
+h2 {
+    display: inline-block;
+}
+
+p {
+    display: flex;
+}
+
+/* ------------Response Design at 750px---------------------------------------------------- */
+@media screen and (max-width:750px){
+    header {
+        display:grid;
+        font-size: 30px;
+        color: white;
+        text-align: left;
+    }
+  
+    h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 21px;
+        font-style: italic;
+        color: dimgrey;
+        padding: 10px 20px;
+    }
+    .container2{
+        display: grid;
+        width: 100%;
+        /* height: auto; */
+        background-color: rgb(24, 112, 122);
+        padding: 0px 0px;
+        margin: 0px;
+}
+    .container4 {
+    background-color: rgb(72, 30, 87);
+    display: grid;
+    width: 100%;
+    padding:10px;
+}
+.lightbulb3 {
+    display: grid;
+    grid-row:1;
+    align-items: right;
+    float: left;
+    padding: 5px;
+    width: 200px;
+}
+.container5{
+    background-color: rgb(192, 131, 185);
+    display: grid;
+    grid-row:1;
+    width: 100%;
+    padding:10px;
+}
+.container6 {
+    background-color: rgb(24, 112, 142);
+    display: grid;
+    grid-row:1;
+    width: 100%;
+    padding:10px;
+}
+}
+
+/* ----------------Response design at 500px--------------------------------------------------------- */
+@media screen and (max-width:500px) {
+    header {
+        display:grid;
+        font-size: 30px;
+        color: white;
+        text-align: left;
+    }
+    .logoimage {
+        display:grid;
+        width:auto;
+        /* align-items: left;
+        float: left; */
+        padding: 5px;
+    
+    }
+    h1 {
+        font-size: 20px;
+        color: rgb(211, 233, 156);
+        font-style: italic;
+        justify-content: center;
+        font-weight: lighter;
+        padding: 10px 20px;
+    }
+    h2 {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 18px;
+        font-style: italic;
+        color: dimgrey;
+        padding: 10px 20px;
+    }
+    .button {
+        padding: 15px 30px;
+        display: flex;
+        justify-content: center;
+        /* border-radius: 20px; */
+        color: white;
+        /* font-weight: bold; */
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        color: white;
+        transition: .5s;
+        margin-top: 0px;
+        padding: 15px 15px;
+    }
+    .topnav ul {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /* margin:0; */
+        display: list-item;
+        justify-content: space-between;
+        background-color: darkcyan;
+        padding: 14px;
+    }
+
+    .container3{
+        display: grid;
+        grid-template-columns: 1;
+    }
+    .lightbulb5 {
+        opacity:1;
+         display:grid;
+         width:auto;
+         height:auto;
+         grid-column: 1;
+         grid-row:2;
+         transition: .5s ease;
+         backface-visibility: hidden;
+         /* align-items: center; */
+         padding: 5px;
+        
+     }
+     .middle{
+     display:grid;
+        transition: .5s;
+     opacity:0;
+     position: relative;
+     grid-column:1;
+     top:50%;
+     left:50%;
+     /* translate(-50%, -50%);
+       -ms-transform: translate(-50%, -50%);
+       text-align: center; */
+     }
+     
+     .container3:hover .lightbulb{
+         opacity:0.3;
+     }
+     .container3:hover .middle{
+         opacity: 1;
+         
+     }
+     
+     .container3:hover.text{
+         background-color:black;
+         display:flex;
+         grid-column: 1;
+         color:darkgreen;
+         font-size:30px;
+         padding:0;
+     }
+
+     .container4 {
+        background-color: rgb(72, 30, 87);
+        display: grid;
+        width: 100%;
+    }
+    .lightbulb3 {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* align-items: right;
+        float: left; */
+        padding: 5px;
+        width: 200px;
+    }
+}
+    /* ------------Response Design 200px----------------------------------------------------- */
+    @media screen and (max-width: 200px) {
+        main {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-gap: 20px;
+            flex-grow: 1;
+        }
+
+        .topnav ul {
+            list-style-type: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            /* margin:0; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: darkcyan;
+            padding: 14px;
+            /* overflow:hidden; */
+        }
+
+        .topnav a {
+            display: flex;
+            color: aliceblue;
+            text-align: center;
+            padding: 14px 0px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        /* change color on hover */
+        .topnav a:hover {
+            color: black;
+        }
+
+        /* color to active/current link */
+        .topnav a.active {
+            color: darkslateblue;
+        }
+
+        .teal {
+            display: grid;
+            grid-template-columns: 1fr;
+            align-items: center;
+
+        }
+
+        .teal img {
+            display: grid;
+            float: left;
+            padding: 5px;
+            grid-template-columns: auto;
+            grid-gap: 5%;
+        }
+
+        .purple {
+            display: grid;
+            grid-template-columns: 1f 1fr;
+            align-items: center;
+        }
+
+        .purple img {
+            display: grid;
+            float: left;
+            padding: 5px;
+            grid-template-columns: 1fr;
+            grid-gap: 5%;
+
+        }
+
+    }
+/* --------------Response Design 135px-------------------------------------------------------------- */
+    @media screen and (max-width: 135px) {
+        .container {
+            max-width: 100%;
+            background-color: darkslateblue;
+        }
+
+        .logoimage {
+            width: 120px;
+            align-items: flex;
+            /* float:left; */
+            padding: 5px;
+
+        }
+
+        header {
+            font-size: 10px;
+            color: white;
+        }
+
+        h2 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 10px;
+            font-style: italic;
+            color: dimgrey;
+            padding: 10px;
+        }
+
+        .topnav {
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 0%;
+            text-align: center;
+            align-items: end;
+        }
+    }
